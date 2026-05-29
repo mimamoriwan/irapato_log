@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/itokazuyasushi/Desktop/Claude/irapato_log && git status --porcelain | grep -q . && git add -A && git commit -m \"自動コミット: $(date '+%Y-%m-%d %H:%M')\" && git push origin main || true"
+          }
+        ]
+      }
+    ]
+  }
+}

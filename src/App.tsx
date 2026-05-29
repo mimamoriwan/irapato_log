@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { RecordTab } from './components/RecordTab'
+import { AnalysisTab } from './components/AnalysisTab'
 
 type Tab = 'record' | 'analysis'
 
@@ -30,11 +31,7 @@ export default function App() {
         </div>
 
         {tab === 'record' && <RecordTab />}
-        {tab === 'analysis' && (
-          <p className="text-center text-sm text-gray-400 mt-8">
-            分析タブは Step 4 で実装します
-          </p>
-        )}
+        {tab === 'analysis' && <AnalysisTab />}
       </div>
     </div>
   )
